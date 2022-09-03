@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* display: block; */
+  /* height: 5rem; */
+  /* z-index: 999; */
+  /* align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.3); */
+  /* padding: 0 25%; */
+}
+
+.top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  /* -webkit-transition: all 0.4s ease-out; */
+  /* transition: all 0.4s ease-out; */
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25%;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.container li {
+  margin-left: 3rem;
+}
+
+.container a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: white;
+}
+
+.container a:hover,
+.container a:active,
+.container a.active {
+  color: #069a97;
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/bg/agenda3.jpg);
+  background-position-x: 0%;
+  background-position-y: 20%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.image div {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
