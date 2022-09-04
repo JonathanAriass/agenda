@@ -1,13 +1,32 @@
 .card {
-  min-width: 25%;
-  min-height: 500px;
-  height: 60%;
-  width: 25%;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  text-align: center;
-  font-size: 35px;
+  /* padding: 0%; */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  color: black;
 }
+
+/* .card div:first-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+#test {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .card :not(div:first-of-type) {
+  width: 40%;
+  height: 100%;
+  float:right;
+} */
 
 .card button {
   margin-top: 1rem;
@@ -24,36 +43,70 @@
 .card Link {
   color: white;
   text-decoration: none;
+  color: black;
 }
 
-/* 
-.group {
+.welcome{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: url("../../images/bg/agenda.jpg"); */
+}
+
+.welcome Image {
+  max-width: 40%;
+ max-height: 40%;
+}
+
+.welcome p {
+  width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.form{
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: url("../../images/bg/agenda.jpg"); */
+}
+
+.form form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: url("../../images/bg/agenda.jpg"); */
+}
+
+
+.inputblock {
+  width: 100%;
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-} */
-
-.inputblock {
-  padding-bottom: 2.5rem;
 }
 
 .inputblock label {
   display: block;
-  color: white;
   font-weight: bold;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
 }
 
 .inputblock input {
-  margin-top: 0rem;
+  /* margin-top: 0rem; */
   text-align: center;
   border-radius: 35px;
   background: rgba(255, 255, 255, 0.15);
   height: 35px;
   width: 60%;
+  color: grey;
 }
